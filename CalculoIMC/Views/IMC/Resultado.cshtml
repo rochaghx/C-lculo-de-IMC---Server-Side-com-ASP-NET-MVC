@@ -1,0 +1,12 @@
+@model CalculoIMC.Models.IMC
+
+<h2>Resultado do IMC</h2>
+
+<p>
+    Seu IMC é:
+    <strong>@Model.Resultado.ToString("F2")</strong>
+</p>
+
+<a asp-action="Calcular">
+    Novo Cálculo
+</a>

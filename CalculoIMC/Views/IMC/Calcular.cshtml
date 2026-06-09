@@ -1,0 +1,31 @@
+@model CalculoIMC.Models.IMC
+
+<h2>Cálculo de IMC</h2>
+
+<form asp-action="Calcular" method="post">
+
+    <div>
+        <label asp-for="Peso"></label>
+        <input asp-for="Peso" />
+        <span asp-validation-for="Peso"></span>
+    </div>
+
+    <br>
+
+    <div>
+        <label asp-for="Altura"></label>
+        <input asp-for="Altura" />
+        <span asp-validation-for="Altura"></span>
+    </div>
+
+    <br>
+
+    <button type="submit">
+        Calcular IMC
+    </button>
+
+</form>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
